@@ -581,9 +581,9 @@
 					} else if (Object.keys(assess_session.attributes[indice].questionnaire.points).length == 2 && assess_session.attributes[indice].mode == "Normal") {
 		                 		p = 0.75;
 					} else if (Object.keys(assess_session.attributes[indice].questionnaire.points).length == 0 && assess_session.attributes[indice].mode == "Reversed") {
-		                 		p = 0.75;
-					} else if (Object.keys(assess_session.attributes[indice].questionnaire.points).length == 2 && assess_session.attributes[indice].mode == "Reversed") {
 		                 		p = 0.25;
+					} else if (Object.keys(assess_session.attributes[indice].questionnaire.points).length == 2 && assess_session.attributes[indice].mode == "Reversed") {
+		                 		p = 0.75;
 					}
 
 					var L = [0.75 * (max_interval - min_interval) + min_interval, 0.25 * (max_interval - min_interval) + min_interval];
